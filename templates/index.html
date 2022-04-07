@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="/static/style.css"/>
+<link rel="stylesheet" href="/static/menu.css">
+<link rel="stylesheet" href="/static/footer.css">
+<script src="/static/script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion De Clientes</title>
+
+</head>
+<body>
+
+ 
+  <!--Inicio Menu-->
+  <nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='menu()'><label></label>
+    <ul>
+      <li><a href='https://portafolio-montesino.000webhostapp.com/#about' target="_blank">Portafolio</a></li>
+      <li><a href='http://www.gmail.com' target="_blank">Enviar Email</a></li>
+      <li><a href='https://www.linkedin.com/in/jos%C3%A9andres-montesino-2a00161a6' target="_blank">Contacte Al Dessarrollador</a></li>
+    </ul>
+  </nav>
+
+<!--Titulo -->
+<h1>Gestion de Clientes</h1>
+
+<!-- <a onclick="agregar()" id="btnAgregar" href="#" class="myButton">Agregar Cliente</a>
+-->
+<a onclick="agregar()" id="btnAgregar" href="#"  class="myButton" Agregar Cliente>Agregar Cliente</a></li>
+<!--tabla de clientes-->
+<table id="customers">
+  <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Email</th>
+    <th>Telefono</th>
+    <th>Direccion</th>
+    <th>Acciones</th>
+    
+  </tr>
+  </thead>
+  
+  <tbody>
+
+  </tbody>
+
+</table>
+
+
+<!-- Modal -->
+<div id="modale" class="modale" aria-hidden="true">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h2>Agregar Cliente</h2>
+      <a onclick="cerrarModale()" href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+    </div>
+
+    <div class="modal-body">
+      <input id="txtId" type="hidden"  placeholder="ID" size="20" /><br/>
+      <input id="txtNombre" type="text"  placeholder="Nombre" size="20" /><br/>
+      <input id="txtApellido" type="text"  placeholder="Apellido" size="20" /><br/>
+      <input id="txtCorreo" type="email"  placeholder="Correo Electronico" size="40"/><br/>
+      <input id="txtTelefono" type="text"  placeholder="Contacto" size="20" /><br/>
+      <input id="txtDireccion" type="text"  placeholder="Direccion" size="50" /><br/>
+    <div class="modal-footer">
+  
+
+      <a onclick="save()" href="#" class="btn" >Guardar</a>
+    </div>
+  </div>
+</div>
+
+  </body>
+
+</html>
+
