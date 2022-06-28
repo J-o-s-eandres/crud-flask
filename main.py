@@ -31,8 +31,8 @@ def getAllCustomers():
                 'Nombre' : row[1], 
                 'Apellido':row[2], 
                 'email' : row[3], 
-                'Contacto' :row[4] , 
-                'Direccion': row[5]
+                'telefono' :row[4] , 
+                'direccion': row[5]
          }
 
         result.append(content)
